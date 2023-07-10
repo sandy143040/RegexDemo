@@ -16,16 +16,21 @@ namespace Regex_Demo
             {
                 Console.WriteLine("Please choose option: ");
                 Console.WriteLine("1.Regex");
+                Console.WriteLine("2.Validate First Name");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch(option)
                 {
                     case 1:
                         regexDemo.MyRegex();
                         break;
+                    case 2:
+                        regexDemo.CheckName("Sandeep");
+                        break;
                     default:
                         Console.WriteLine("Invalid input");
                         break;
                 }
+                Console.ReadLine();
             }
         }
     }
