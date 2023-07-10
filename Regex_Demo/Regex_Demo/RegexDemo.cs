@@ -35,5 +35,17 @@ namespace Regex_Demo
                 Console.WriteLine("string does not match the pattern");
             }
         }
+        public void CheckLastName(string name)
+        {
+            string LastName = "^[A-Z][a-z]{3,}?$";
+            if (Regex.IsMatch(name, LastName))
+            {
+                Console.WriteLine("String is match the pattern");
+            }
+            else
+            {
+                Console.WriteLine("string does not match the pattern");
+            }
+        }
     }
 }
